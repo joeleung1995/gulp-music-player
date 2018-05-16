@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+.playing {
+	color: #C40018;
+}
+
+.wrapper {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.2);
+	.top-img {
+		height: 50vw;
+		padding: 5vh 0;
+		.img-wrapper {
+			width: 50vw;
+			height: 50vw;
+			margin: 0 auto;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+
+	}
+	.mid-info {
+		height: 250px;
+		.info-wrapper {
+			p {
+				margin: 0;
+				height: 80px;
+				font-size: 40px;
+				line-height: 80px;
+				text-align: center;
+				color: #f7f7f7;
+			}
+			.song-name {
+				font-size: 60px;
+				font-weight: bold;
+			}
+		}
+	}
+	.mid-control {
+		display: flex;
+		height: 100px;
+		font-size: 30px;
+		.current-time,
+		.end-time {
+			flex: 2;
+			line-height: 100px;
+			padding: 0 20px;
+			text-align: center;
+			color: #f7f7f7;
+		}
+		.line-wrapper {
+			flex: 6;
+			padding-top: 50px; 
+			overflow: hidden;
+			.line-top,
+			.line-bottom {
+				height: 2px;
+				background-color: rgba(255, 255, 255, 0.6);
+			}
+			.line-top {
+				position: relative;
+				top: 2px;
+				background-color: rgba(255, 255, 255, 0.86);
+				transform: translateX(-100%);
+				.circle {
+					position: absolute;
+					top: -50px;
+					right: -50px;
+					height: 100px;
+					width: 100px;
+					z-index: 1000;
+					&::after {
+						content: "";
+						display: block;
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						background-color: #fff;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translateY(-40%);
+					}
+				}
+			}
+		}
+	}
+
+	.play-list {
+		ul {
+			position: absolute;
+			bottom: 6vh;
+			right: 0;
+			min-width: 50vw;
+			background-color: rgba(200, 200, 200, 0.6);
+			li {
+				list-style: none;
+				font-size: 48px;
+				line-height: 80px;
+				padding: 0 30px;
+				border-top: 1px solid #424242;
+			}
+		}
+	}
+
+	.bottom-btn {
+		position: absolute;
+		width: 100vw;
+		bottom: 0;
+		height: 6vh;
+		background-color: #888;
+		.btn-wrapper {
+			display: flex;
+			height: 100%;
+			div {
+				position: relative;
+				flex: 1;
+				height: 100%;
+				img {
+					position: absolute;
+					width: 30%;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+
+	}
+}
