@@ -1,7 +1,9 @@
 # music-player-gulp-
 基于gulp，less，jQuery, h5-audio的音乐播放器。  
-### 项目介绍：  
-![](http://my-first-bucket-1255365917.coscd.myqcloud.com/git/music-player-pic.png)  
+### 项目介绍：  
+项目预览：<https://joeleung1995.cn/music-player/build/html/index.html>  
+
+![](http://my-first-bucket-1255365917.coscd.myqcloud.com/git/music-player-pic.png)  
 
 
 1 控制面板: 进行添加收藏，上一首，下一首，播放/暂停，播放列表的管理；   
